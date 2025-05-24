@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --first-color: #45d3d3;
+    --second-color: #ea5353;
+    --third-color: #fcaf4a;
+    --fourth-color: #549ef2;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+    gap: 50px;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+}
+.first{
+    margin-top: 50px;
+    color: #697077;
+    font-weight: 300; ;
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+.second{
+    color: #4c4e61;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.second + p{
+    color: #697077;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+    word-wrap: break-word;
+}
+.card1{
+    display: flex;
+    border: 5px solid transparent;
+    border-top: #45d3d3 5px solid;
+    box-shadow: #697077 0px 4px 4px -2px ;
+    width: 95%;
+    min-height: 250px;
+    margin: 0 auto; 
+}
+.card1 p{
+    color: #697077;
+    font-weight: 300;
+    font-size: 13px;
+    margin-left: 20px;
+    
+    
+}
+.card1 p  span{
+    color: #4c4e61;
+    font-weight: 600;
+    font-size: 1.4rem;
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.card1 img{
+    align-self: flex-end;
+    margin-bottom: 2rem;
+    margin-right: 3rem;
+}
+
+.card2{
+    display: flex;
+    border: 5px solid transparent;
+    border-top: #ea5353 5px solid;
+    box-shadow: #697077 0px 4px 4px -2px ;
+    width: 95%;
+    min-height: 250px;
+    margin: 0 auto; 
+}
+.card2 p{
+    color: #697077;
+    font-weight: 300;
+    font-size: 13px;
+    margin-left: 20px;
+    
+    
+}
+.card2 p  span{
+    color: #4c4e61;
+    font-weight: 600;
+    font-size: 1.4rem;
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.card2 img{
+    align-self: flex-end;
+    margin-bottom: 2rem;
+    margin-right: 3rem;
+}
+.card3{
+    display: flex;
+    border: 5px solid transparent;
+    border-top: #fcaf4a 5px solid;
+    box-shadow: #697077 0px 4px 4px -2px ;
+    width: 95%;
+    min-height: 250px;
+    margin: 0 auto; 
+}
+.card3 p{
+    color: #697077;
+    font-weight: 300;
+    font-size: 13px;
+    margin-left: 20px;
+    
+    
+}
+.card3 p  span{
+    color: #4c4e61;
+    font-weight: 600;
+    font-size: 1.4rem;
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.card3 img{
+    align-self: flex-end;
+    margin-bottom: 2rem;
+    margin-right: 3rem;
+}
+.card4{
+    display: flex;
+    border: 5px solid transparent;
+    border-top: #549ef2 5px solid;
+    box-shadow: #697077 0px 4px 4px -2px ;
+    width: 95%;
+    min-height: 250px;
+    margin: 0 auto; 
+}
+.card4 p{
+    color: #697077;
+    font-weight: 300;
+    font-size: 13px;
+    margin-left: 20px;
+    
+    
+}
+.card4 p  span{
+    color: #4c4e61;
+    font-weight: 600;
+    font-size: 1.4rem;
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.card4 img{
+    align-self: flex-end;
+    margin-bottom: 2rem;
+    margin-right: 3rem;
+}
+@media screen and (min-width: 600px){
+    .container{
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        gap: 20px;
+   
+        gap: 20px;
+        min-height: 100vh;
+    }
+    .card1, .card2, .card3, .card4{
+        width: 80%;
+        height: fit-content;
+    }
+    .head{
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    .card1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 5;
+        align-self: center;
+        justify-self: end;
+        
+    }
+    .card3{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        align-items: center;
+        justify-self: center;
+        width: 50%;
+    }
+    .card4{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: -4;
+        grid-row-end: -1;
+        align-self: center;
+        justify-self: center;
+    }
+    }
